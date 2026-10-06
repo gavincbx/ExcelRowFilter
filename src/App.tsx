@@ -95,43 +95,7 @@ export default function App() {
     }, 3000);
   };
 
-  // Load initial sample dataset: Full BV with the user's exact Full BV filters
-  useEffect(() => {
-    const initialSample = createSampleWorkbook('full_bv');
-    setWorkbook(initialSample);
-    setActiveSheetName(initialSample.activeSheetName);
 
-    // Apply the 4 filter conditions for Full BV as provided by user
-    setRules([
-      {
-        id: 'rule-fbv-1',
-        column: 'Channel',
-        operator: 'equals',
-        value: 'App',
-      },
-      {
-        id: 'rule-fbv-2',
-        column: 'Sales Package',
-        operator: 'equals',
-        value: 'sales_kitting_clone',
-      },
-      {
-        id: 'rule-fbv-3',
-        column: 'Kitting Code',
-        operator: 'not_contains',
-        value: 'E',
-      },
-      {
-        id: 'rule-fbv-4',
-        column: 'Kitting Name',
-        operator: 'not_contains',
-        value: 'INC',
-      },
-    ]);
-    setMatchMode('and');
-    setActivePresetId('preset-full-bv');
-    setActivePresetName('Full BV Filter');
-  }, []);
 
   const handleLoadSample = (type: 'full_bv' | 'inc') => {
     const sample = createSampleWorkbook(type);
