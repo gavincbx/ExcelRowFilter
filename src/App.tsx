@@ -105,18 +105,6 @@ export default function App() {
     if (type === 'full_bv') {
       setRules([
         {
-          id: 'rule-fbv-1',
-          column: 'Channel',
-          operator: 'equals',
-          value: 'App',
-        },
-        {
-          id: 'rule-fbv-2',
-          column: 'Sales Package',
-          operator: 'equals',
-          value: 'sales_kitting_clone',
-        },
-        {
           id: 'rule-fbv-3',
           column: 'Kitting Code',
           operator: 'not_contains',
@@ -135,18 +123,6 @@ export default function App() {
       triggerToast('Loaded Full BV with active filters');
     } else {
       setRules([
-        {
-          id: 'rule-inc-1',
-          column: 'Channel',
-          operator: 'equals',
-          value: 'App',
-        },
-        {
-          id: 'rule-inc-2',
-          column: 'Sales Package',
-          operator: 'equals',
-          value: 'sales_kitting_clone',
-        },
         {
           id: 'rule-inc-3',
           column: 'Kitting Code',
