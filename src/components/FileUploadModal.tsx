@@ -137,49 +137,7 @@ export const FileUploadModal: React.FC<FileUploadModalProps> = ({
             </div>
           )}
 
-          {/* Sample Dataset Quick Picks */}
-          <div className="pt-2 border-t border-slate-100">
-            <div className="flex items-center justify-between mb-2.5">
-              <span className="text-xs font-semibold text-slate-700 uppercase tracking-wider">
-                Or try a realistic sample dataset:
-              </span>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-              <button
-                type="button"
-                onClick={() => {
-                  onLoadSample('full_bv');
-                  onClose();
-                }}
-                className="text-left p-3 rounded-lg border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/30 transition-all group"
-              >
-                <div className="flex items-center gap-2 mb-1">
-                  <FileSpreadsheet className="w-4 h-4 text-emerald-600 group-hover:scale-105 transition-transform" />
-                  <span className="text-xs font-semibold text-slate-900">Full BV</span>
-                </div>
-                <p className="text-[11px] text-slate-500 leading-snug">
-                  220 BV entity records with industry, turnover, status & compliance
-                </p>
-              </button>
 
-              <button
-                type="button"
-                onClick={() => {
-                  onLoadSample('inc');
-                  onClose();
-                }}
-                className="text-left p-3 rounded-lg border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/30 transition-all group"
-              >
-                <div className="flex items-center gap-2 mb-1">
-                  <FileSpreadsheet className="w-4 h-4 text-emerald-600 group-hover:scale-105 transition-transform" />
-                  <span className="text-xs font-semibold text-slate-900">INC</span>
-                </div>
-                <p className="text-[11px] text-slate-500 leading-snug">
-                  200 INC corporate records with states, revenue, tier & contracts
-                </p>
-              </button>
-            </div>
-          </div>
         </div>
 
         {/* Modal Footer */}

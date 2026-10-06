@@ -400,13 +400,7 @@ export default function App() {
               >
                 Upload Excel File
               </button>
-              <button
-                type="button"
-                onClick={() => handleLoadSample('full_bv')}
-                className="w-full sm:w-auto px-5 py-2.5 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition-colors"
-              >
-                Load Sample Data
-              </button>
+
             </div>
           </div>
         )}
