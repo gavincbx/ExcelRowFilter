@@ -1,0 +1,6 @@
+{
+  "name": "RowFilter - Excel Record Filter & Count Dashboard",
+  "description": "Upload any Excel or CSV file, apply custom row filters, and get instant record counts with summary dashboard metrics and distributions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
